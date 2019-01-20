@@ -35,11 +35,11 @@ export LSCOLORS=Gxfxcxdxbxegedabagacad
       export GIT_PS1_SHOWSTASHSTATE=1
       export GIT_PS1_SHOWUNTRACKEDFILES=0
 
-     # export PS1="$GY[$Y\u$GY@$P\h$GY:$B\W\$(__git_ps1 \"$GY|$LB%s\")$GY]$W\$(get_prompt_symbol) "
+     export PS1="$GY[$Y\u$GY@$P\h$GY:$B\W\$(__git_ps1 \"$GY|$LB%s\")$GY]$W\$(get_prompt_symbol) "
      export PS1="$GY$Y Manish$GY:$P\w$GY\$(__git_ps1 \"$LB($LB%s)\")$GY$W\$(get_prompt_symbol) "
     else
-      export PS1="$GY[$Y\u$GY@$P\h$GY:$B\w$GY]$W\$(get_prompt_symbol) "
-      export PS1="$GY$Y Manish$GY:$B\w$GY$Y\$(parse_git_branch)$W\$(get_prompt_symbol) "
+      export PS1="$Y\u$GY:$B\w$W$(get_prompt_symbol) "
+      export PS1="$GY$Y\u$GY:$B\w$GY$Y\$(parse_git_branch)$W\$(get_prompt_symbol) "
     fi
   else
     export TERM='xterm-color'

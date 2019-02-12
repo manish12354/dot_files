@@ -1,6 +1,6 @@
 export CLICOLOR=1
 
-export LSCOLORS=Gxfxcxdxbxegedabagacad
+export LS_COLORS=di="1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43"
 
 
 [[ -f $HOME/.dircolors ]] && eval $(dircolors -b $HOME/.dircolors)
@@ -35,18 +35,18 @@ export LSCOLORS=Gxfxcxdxbxegedabagacad
       export GIT_PS1_SHOWSTASHSTATE=1
       export GIT_PS1_SHOWUNTRACKEDFILES=0
 
-     export PS1="$GY[$Y\u$GY@$P\h$GY:$B\W\$(__git_ps1 \"$GY|$LB%s\")$GY]$W\$(get_prompt_symbol) "
+     export PS1="$GY[$Y Manishy$GY@$P\h$GY:$B\W\$(__git_ps1 \"$GY|$LB%s\")$GY]$W\$(get_prompt_symbol) "
      export PS1="$GY$Y Manish$GY:$P\w$GY\$(__git_ps1 \"$LB($LB%s)\")$GY$W\$(get_prompt_symbol) "
     else
-      export PS1="$Y\u$GY:$B\w$W$(get_prompt_symbol) "
-      export PS1="$GY$Y\u$GY:$B\w$GY$Y\$(parse_git_branch)$W\$(get_prompt_symbol) "
+      export PS1="$Y Manishy$GY:$B\w$W$(get_prompt_symbol) "
+      export PS1="$GY$Y Manishy$GY:$B\w$GY$Y\$(parse_git_branch)$W\$(get_prompt_symbol) "
     fi
   else
     export TERM='xterm-color'
   fi
 
   alias ll="ls -la"
-  alias cdp="cd /c/Users/yadavm1/projects"
+  alias cdp="cd ~/projects"
   alias gp="git pull -r"
   alias grv="git remote -v"
   alias gco="git checkout"
@@ -54,6 +54,8 @@ export LSCOLORS=Gxfxcxdxbxegedabagacad
   alias gst="git status"
   alias glol='git log --graph --pretty='\''%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\'
   alias gcp='git cherry-pick'
+  alias dc='docker-compose'
+  alias d='docker'
 
   alias -- -="cd -"
   alias ..="cd ../"
